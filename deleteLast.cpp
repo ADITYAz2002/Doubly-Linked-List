@@ -33,6 +33,8 @@ Node* delLast(Node* head)
     
     curr -> prev -> next = NULL;
 
+    delete (curr -> next);
+
     return head;
 }
 
@@ -57,6 +59,6 @@ int main()
 
 	head=delLast(head);
 	printlist(head);
-    
+
 	return 0;
 }
